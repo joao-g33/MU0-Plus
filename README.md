@@ -112,3 +112,23 @@ a maquina virtual conta com 17 instruções, segue abaixo: nome, significado e e
 ### JAC
 - JAC --> "Jump Accumulator" (saltar para acumulador)
 - não recebe nenhum parâmetro, apenas aponta o PC para o valor atual do acumulador
+
+| Decimal | Opcode (hex) | Instruction | Effect                           |
+|---------|--------------|-------------|----------------------------------|
+| 1       | 0001         | LDA S       | ACC = mem[S]                     |
+| 2       | 0002         | STO S       | mem[S] = ACC                     |
+| 3       | 0003         | CLA         | ACC = 0                          |
+| 4       | 0004         | ADD S       | ACC += mem[S]                    |
+| 5       | 0005         | SUB S       | ACC -= mem[S]                    |
+| 6       | 0006         | MUL S       | ACC *= mem[S]                    |
+| 7       | 0007         | DIV S       | ACC /= mem[S]                    |
+| 8       | 0008         | AND S       | ACC &= mem[S]                    |
+| 9       | 0009         | OR S        | ACC ~= mem[S]                    |
+| 10      | 000A         | XOR S       | ACC ^= mem[S]                    |
+| 11      | 000B         | SHL S       | ACC << mem[S]                    |
+| 12      | 000C         | SHR S       | ACC >> mem[S]                    |
+| 13      | 000D         | JMP S       | pc = S                           |
+| 14      | 000E         | JGE S       | if ACC >= 0; pc = S              |
+| 15      | 000F         | JNE S       | if ACC != 0; pc = S              |
+| 16      | 0010         | JAC         | PC = ACC                         |
+| 17      | 0011         | HALT        | running = false                  |
