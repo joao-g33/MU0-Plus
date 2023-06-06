@@ -1,6 +1,39 @@
-# maquina virtual
+# MU0 Plus:
 
-**fiz esta maquina virtual para aprender mais sobre arquitetura de computadores e entender a fundo como um processador busca, decodifica e executa instruções. ela foi criada a partir da arquitetura MU0, da qual eu modifiquei para adicionar mais funcionalidades e instruções. segue abaixo a documentação dessa maquina virtual:**
+MU0 Plus é uma arquitetura de computador criada por mim, se trata de uma versão simples, porém, com mais funcionalidades em comparação a arquitetura MU0.
+
+## overview da arquitetura MU0:
+
+### arquitetura MU0
+
+<div align="center">
+    <img src="img/mu0-architecture.png" alt="arquitetura MU0" width="400"/>
+    <br/>
+    http://users.cecs.anu.edu.au/~Gerard.Borg/public/clab4.pdf
+</div>
+
+### conjunto de instruções da arquitetura MU0
+
+<div align="center">
+    <img src="img/mu0-instruction-set.png" alt="conjunto de instruções da arquitetura MU0" width="400"/>
+    <br/>
+    https://gomoveyongs.tistory.com/6
+</div>
+
+# simulação da MU0 Plus:
+
+o foco principal deste repositório é a maquina virtual contida nele. fiz esta VM para simular a minha versão da arquitetura MU0, a MU0 Plus. esta VM é feita inteiramente em C e pode ser reprogramada ao mudar seus valores e endereços de memória manualmente.
+
+``` c
+mem[0x1119] = 0x00090000;   // or  0000
+mem[0x111a] = 0x000a0000;   // xor 0000
+mem[0x111b] = 0x000b0000;   // shl 0000
+mem[0x111c] = 0x000c0000;   // shr 0000
+```
+
+<br/>
+
+segue abaixo uma documentação básica da **maquina virtual** MU0 Plus:
 
 # § memória
 
