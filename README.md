@@ -33,7 +33,7 @@ mem[0x111c] = 0x000c0000;   // shr 0000
 
 <br/>
 
-segue abaixo uma documentação básica da **maquina virtual** MU0 Plus:
+segue abaixo uma documentação básica da **maquina virtual** MU0 Plus. nesta documentação, todos os detalhes importantes sobre a arquitetura MU0 Plus estão ressaltados, portanto, é o necessário para se obter entendimento sobre o seu funcionamento.
 
 # § memória
 
