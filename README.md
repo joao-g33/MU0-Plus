@@ -51,8 +51,8 @@ esta maquina virtual tem sua **memória com capacidade de 32 bits** e ultiliza *
 exemplo:
 ``` c
 // endereço na memória    conteúdo dentro daquele endereço
-      mem[0x0000]      =           00030001;
-      mem[0x0001]      =           00010000;
+      mem[0x0000]      =          0x00030001;
+      mem[0x0001]      =          0x00010000;
 ``` 
 os endereços podem ir de **0000** até **ffff** e seus conteúdos podem ter valores de **00000000** até **ffffffff**
 
