@@ -1,6 +1,4 @@
-# MU0 Plus:
-
-MU0 Plus é uma arquitetura de computador criada por mim, se trata de uma versão simples, porém, com mais funcionalidades em comparação a arquitetura MU0.
+# introdução
 
 ## overview da arquitetura MU0:
 
